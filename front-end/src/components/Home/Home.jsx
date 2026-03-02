@@ -26,7 +26,7 @@ function Home({ onJobInfoClick }) {
         setError(null);
         
         // API endpoint from environment variable, fallback to localhost for development
-        const apiUrl = import.meta.env.VITE_API_URL || 'https://green-careers-map-demo.fly.dev';
+        const apiUrl = import.meta.env.VITE_API_URL || 'https://prc-green-careers-map.fly.dev';
         
         const response = await fetch(`${apiUrl}/items/jobs`);
 

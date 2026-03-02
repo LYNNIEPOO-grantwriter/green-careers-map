@@ -14,7 +14,7 @@ This backend deploys Directus CMS to Fly.io with a persistent volume for uploads
 
 1. **Create the Fly app** (if not already created):
    ```bash
-   fly apps create green-careers-map-demo
+   fly apps create prc-green-careers-map
    ```
 
 2. **Create a persistent volume** for uploads:
@@ -57,7 +57,7 @@ This backend deploys Directus CMS to Fly.io with a persistent volume for uploads
 **Public environment variables** (already set in fly.toml):
 - `WEBSOCKETS_ENABLED=true`
 - `CORS_ENABLED=true`
-- `PUBLIC_URL=https://green-careers-map-demo.fly.dev`
+- `PUBLIC_URL=https://prc-green-careers-map.fly.dev`
 
 ### Useful Commands
 
@@ -86,7 +86,7 @@ fly secrets set DB_PASSWORD=new_password
 
 Once deployed, access your Directus instance at:
 ```
-https://green-careers-map-demo.fly.dev
+https://prc-green-careers-map.fly.dev
 ```
 
 Log in with the `ADMIN_EMAIL` and `ADMIN_PASSWORD` you set in the secrets.
@@ -100,7 +100,7 @@ For a new Fly Postgres database:
 fly postgres create --name green-careers-db --region iad
 
 # Attach it to your app (this sets DB secrets automatically)
-fly postgres attach green-careers-db -a green-careers-map-demo
+fly postgres attach green-careers-db -a prc-green-careers-map
 ```
 
 Alternatively, use any external PostgreSQL provider (Supabase, Railway, etc.) and manually set the DB secrets as shown above.

@@ -19,7 +19,7 @@ The deployment needs your backend API URL:
 2. Click **New repository secret**
 3. Add:
    - **Name**: `VITE_API_URL`
-   - **Value**: `https://green-careers-map-demo.fly.dev` (your Directus backend URL)
+   - **Value**: `https://prc-green-careers-map.fly.dev` (your Directus backend URL)
 4. Click **Add secret**
 
 ## How It Works

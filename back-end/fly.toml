@@ -3,7 +3,7 @@
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'green-careers-map-demo'
+app = 'prc-green-careers-map'
 primary_region = 'iad'
 
 [build]
@@ -17,7 +17,7 @@ primary_region = 'iad'
   
   WEBSOCKETS_ENABLED = "true"
   CORS_ENABLED = "true"
-  PUBLIC_URL = "https://green-careers-map-demo.fly.dev"
+  PUBLIC_URL = "https://prc-green-careers-map.fly.dev"
   
   # These will be overridden by secrets - shown here as placeholders
   # DB_CLIENT = "pg"

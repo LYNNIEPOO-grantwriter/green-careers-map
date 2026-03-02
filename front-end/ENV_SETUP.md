@@ -19,7 +19,7 @@ In your GitHub repository:
 1. Go to **Settings** → **Secrets and variables** → **Actions**
 2. Add a new repository secret:
    - Name: `VITE_API_URL`
-   - Value: `https://green-careers-map-demo.fly.dev` (your production API URL)
+   - Value: `https://prc-green-careers-map.fly.dev` (your production API URL)
 
 3. In your GitHub Actions workflow file (`.github/workflows/deploy.yml`), add:
    ```yaml
@@ -34,7 +34,7 @@ In your GitHub repository:
 If your deployment platform supports setting environment variables directly:
 
 ```bash
-VITE_API_URL=https://green-careers-map-demo.fly.dev npm run build
+VITE_API_URL=https://prc-green-careers-map.fly.dev npm run build
 ```
 
 ## Environment Variable Usage
