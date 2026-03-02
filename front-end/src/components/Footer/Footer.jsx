@@ -64,6 +64,7 @@ function Footer() {
             </p>
           </address>
 
+
           {/* Social Media Icons */}
           <div className="footer__social-icons">
             <a href={nextdoorUrl} className="footer__social-btn" aria-label={nextdoorLabel} target="_blank" rel="noopener noreferrer">
